@@ -1,0 +1,70 @@
+<!-- 見えない部分 -->
+<html>
+
+<head>
+
+
+</head>
+<!-- ↓ここから見える部分↓ -->
+
+<body>
+        <h2>注意事項</h2>
+        <p>・制限時間は10秒。</p>
+        <p>・問題文青色=正解、赤色=不正解。</p>
+        <p>・時間内にタイプした正解キーの数で評価(ミスタッチ点は未実装)。</p>
+        <p>・問題文のローマ字をそのまま入力しないとエラーになる。</p>
+        <p>・shiやchi等、ヘボン式には対応していない。</p>
+        <p>・Escapeを押すとゲームを中断することができる。</p>
+        <p>・打鍵50以上で<span class="result_gold">fast</span>、25以上で<span class="result_silver">normal</span>
+                、25未満で<span class="result_blonz">slow</span></p>
+        
+</body>
+
+</html>
+<style>
+.result_silver {
+        display: block;
+        padding: 0rem 0rem;
+        border-top: 4px solid #d8dcdc;
+        border-right: 4px solid #666;
+        border-bottom: 4px solid #333;
+        border-left: 4px solid #868888;
+        border-radius: 0;
+        margin: 0em 0em;
+        background-image: -webkit-linear-gradient(135deg, #ccc 0%, #868888 20%, #d8dcdc 34%, white 53%, #ccc 100%);
+        background-image: linear-gradient(-45deg, #ccc 0%, #868888 20%, #d8dcdc 34%, white 53%, #ccc 100%);
+        display: inline-block
+    }
+
+    .result_gold {
+        display: block;
+        padding: 0rem 0rem;
+        border-top: 4px solid #ccae05;
+        border-right: 4px solid #736500;
+        border-bottom: 4px solid #504900;
+        border-left: 4px solid #736500;
+        border-radius: 0;
+        margin: 0em 0em;
+        background-image: -webkit-linear-gradient(315deg, #704308 0%, #ffce08 40%, #e1ce08 60%, #704308 100%);
+        background-image: linear-gradient(135deg, #704308 0%, #ffce08 40%, #e1ce08 60%, #704308 100%);
+        display: inline-block
+    }
+
+    .result_blonz {
+        display: block;
+        padding: 0rem 0rem;
+        border-top: 4px solid #ff780a;
+        border-right: 4px solid #6e2800;
+        border-bottom: 4px solid #571e02;
+        border-left: 4px solid #6e2800;
+        border-radius: 0;
+        margin: 0em 0em;
+        background-image: -webkit-linear-gradient(315deg, #ff8827 0%, #f3c610 40%, #e1ce08 60%, #704308 100%);
+        background-image: linear-gradient(135deg, #452904 0%, #ff8308 40%, #e17508 60%, #704308 100%);
+        display: inline-block;
+    }
+
+    .display-block {
+        display: block !important;
+    }
+    </style>
