@@ -85,17 +85,16 @@
     </div>
     <!--タイピングゲーム基本処理-->
     <script>
-        let Q = ["rinngo", "banana", "meronn", "mango-", "itigo", "suika", "tomato", "sirukutatti", "ti-zu", "minnkanngakkou","syuugakuryokou"];//問題文
+        let Q = ["rinngo", "banana", "meronn", "mango-", "itigo", "suika", "tomato", "ti-zu"];//問題文
         let Q_No = Math.floor(Math.random() * Q.length);//問題をランダムで出題する
         var Q_nihongoMondai = [["りんご"], ["ばなな"], ["めろん"], ["まんごー"], ["いちご"], ["すいか"],
-        ["とまと"], ["しるくたっち"], ["ちーず"], ["りんかんがっこう"],["修学旅行の前日の準備を怠らない"]];
+        ["とまと"], ["ちーず"]];
         var Q_nihon = [["り", "ん", "ご"], ["ば", "な", "な"], ["め", "ろ", "ん"], ["ま", "ん", "ご","ー"], ["い", "ち", "ご"], ["す", "い", "か"],
-        ["と", "ま", "と"], ["し", "る", "く", "た", "っ", "ち"], ["ち", "ー", "ず"], ["り", "ん", "か", "ん", "が", "っ", "こ", "う"],
-    ["しゅ","う","が","く","りょ","こ","う","の","ぜ","ん","じ","つ","の","じゅ","ん","び","を","お","こ","た","ら","な","い"]];
+        ["と", "ま", "と"], ["ち", "ー", "ず"]];
         let taip = [""];
         var Q_nihon_new = [];
         let Q_gazou = ["Q_img/apple.png", "Q_img/banana.png", "Q_img/meron.png", "Q_img/mango-.png",
-            "Q_img/itigo.png", "Q_img/suika.png", "Q_img/tomato.png", "Q_img/sirukutatti.png", "Q_img/ti-zu.png"]
+            "Q_img/itigo.png", "Q_img/suika.png", "Q_img/tomato.png", "Q_img/ti-zu.png"]
         let idx1 = 0;
         let idx2 = 0;
         let idx3 = 0;
